@@ -1,0 +1,6 @@
+
+*.download
+*.json
+*.exe
+Python/venv/
+*.log
