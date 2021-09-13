@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Clion.dir/Learning.cpp.o CMakeFiles/Clion.dir/slam.cpp.o -o Clion 

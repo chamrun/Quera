@@ -3,4 +3,5 @@
 *.json
 *.exe
 Python/venv/
+SavedQuestions/
 *.log
