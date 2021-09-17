@@ -1,4 +1,6 @@
-/snap/clion/163/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/chamrun/Documents/Programming/Quera/Cpp/Clion
--- Configuring done
--- Generating done
--- Build files have been written to: /home/chamrun/Documents/Programming/Quera/Cpp/Clion/cmake-build-debug
+"C:\Program Files\JetBrains\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Things\Programming\Quera\Cpp\Clion
+CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
+  CMake 3.20 or higher is required.  You are running version 3.17.3
+
+
+-- Configuring incomplete, errors occurred!

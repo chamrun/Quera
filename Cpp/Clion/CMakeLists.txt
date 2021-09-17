@@ -3,4 +3,4 @@ project(Clion)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Clion Learning.cpp slam.cpp)
+add_executable(Clion Learning.cpp slam.cpp SlamKhdafz.cpp LivanBazi.cpp)

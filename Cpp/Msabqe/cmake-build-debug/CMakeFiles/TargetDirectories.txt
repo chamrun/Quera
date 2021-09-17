@@ -1,0 +1,3 @@
+C:/Things/Programming/Quera/Cpp/Msabqe/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Things/Programming/Quera/Cpp/Msabqe/cmake-build-debug/CMakeFiles/Msabqe.dir
+C:/Things/Programming/Quera/Cpp/Msabqe/cmake-build-debug/CMakeFiles/rebuild_cache.dir
