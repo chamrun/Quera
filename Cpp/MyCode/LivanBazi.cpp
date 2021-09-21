@@ -18,7 +18,7 @@ int main(){
         char dst_spot;
         cin >> dst_spot;
 
-        char new_gram_spot;
+        char new_gram_spot = gram_spot;
 
         if (src_spot == gram_spot)
         {
