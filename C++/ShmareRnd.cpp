@@ -69,13 +69,13 @@ int main()
     {
 
         if (has_four_digits(numbers[i]))
-            cout << "Ronde!";
+            cout << "Ronde!\n";
         else if (has_three_digits(numbers[i]))
-            cout << "Ronde!";
+            cout << "Ronde!\n";
         else if (is_mirror(numbers[i]))
-            cout << "Ronde!";
+            cout << "Ronde!\n";
         else
-            cout << "Rond nist.";
+            cout << "Rond Nist\n";
     }
 
     return 0;
