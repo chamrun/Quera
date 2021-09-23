@@ -1,61 +1,42 @@
 // 0 / 100
 
 #include <iostream>
+#include <map>
+#include <unordered_map>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-bool has_four_digits(string number)
+void swap(int *xp, int *yp)
 {
-
-    for (size_t i = 0; i < number.length() - 2; i++)
-    {
-        if (number.at(i) == '!')
-            continue;
-
-        int counter = 0;
-        for (size_t j = i + 1; j < number.length(); j++)
-        {
-            if (number.at(j) == number.at(i))
-            {
-                number.at(j) == '!';
-                counter++;
-                if (counter == 3)
-                    return true;
-            }
-        }
-
-        number.at(i) = '!';
-    }
-
-    return false;
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
 }
 
-bool has_three_digits(string number)
-{   
-    //cout << "started...";
-    for (size_t i = 0; i < number.length() - 2; i++)
-    {
-        //cout << number.at(i) << number.at(i + 1) << number.at(i + 2) << ".\n";
-        if (number.at(i) == number.at(i + 1) && number.at(i) == number.at(i + 2))
-            return true;
-    }
-
-    return false;
-}
-
-bool is_mirror(string number)
+void selectionSort(int arr[], int n)
 {
-    for (size_t j = 0; j < number.length() / 2; j++)
+    int i, j, min_idx;
+ 
+    // One by one move boundary of unsorted subarray
+    for (i = 0; i < n-1; i++)
     {
-        if(number.at(j) != number.at(number.length() - 1 - j))
-            return false;
+        // Find the minimum element in unsorted array
+        min_idx = i;
+        for (j = i+1; j < n; j++)
+        if (arr[j] < arr[min_idx])
+            min_idx = j;
+ 
+        // Swap the found minimum element with the first element
+        swap(&arr[min_idx], &arr[i]);
     }
-
-    return true;
 }
+ 
+
 
 int main()
 {
+
     int t;
     cin >> t;
 
@@ -66,27 +47,16 @@ int main()
 
         int n_polices;
         cin >> n_polices;
+        map<int, int> polices;
 
         for (size_t j = 0; j < n_polices; j++)
         {
-            /* code */
+            int police_floor;
+            int police_side;
+            cin >> police_floor;
+            cin >> police_side;
+            polices[police_floor] = police_side;
         }
-
-
-
-    }
-
-    for (size_t i = 0; i < t; i++)
-    {
-
-        if (has_four_digits(numbers[i]))
-            cout << "Ronde!\n";
-        else if (has_three_digits(numbers[i]))
-            cout << "Ronde!\n";
-        else if (is_mirror(numbers[i]))
-            cout << "Ronde!\n";
-        else
-            cout << "Rond Nist\n";
     }
 
     return 0;
