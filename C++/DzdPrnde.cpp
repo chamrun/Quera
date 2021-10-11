@@ -35,6 +35,7 @@ int main()
         {
             cout << polices.at(i);
         }
+
         
 
     }
