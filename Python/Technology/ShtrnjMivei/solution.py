@@ -1,21 +1,21 @@
+# 100 / 100
+
 def is_good(fruit: dict):
-    if fruit.get('shape') is 'sphere'
-        and fruit.get('mass') <  
-        and fruit.get('shape') is 'sphere' and
-    pass
+    if fruit['shape'] is 'sphere' and 300 <= fruit['mass'] <= 600 and 100 <= fruit['volume'] <= 500:
+        return fruit['name']
+
+    return None
 
 
 def fruits(fruit_list: tuple):
-
-
-
-    count = 0
+    ans = {}
 
     for fruit in fruit_list:
-        if is_good(fruit):
-            count += 1
+        good_fruit = is_good(fruit)
+        if good_fruit is not None:
+            if good_fruit not in ans:
+                ans[good_fruit] = 1
+            else:
+                ans[good_fruit] += 1
 
-
-
-
-    return {'apple': 2, 'lemon': 1}
+    return ans
