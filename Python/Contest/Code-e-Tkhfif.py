@@ -19,4 +19,12 @@ if __name__ == '__main__':
 
         if is_valid:
             # print(doubtful_code)
-            print("Yes")
+            for char in certain_code:
+                if char not in doubtful_code:
+                    # print(doubtful_code)
+                    print("No")
+                    is_valid = False
+                    break
+                    
+            if is_valid:
+                print("Yes")
