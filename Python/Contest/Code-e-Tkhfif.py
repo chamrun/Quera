@@ -1,5 +1,5 @@
 # I know this is a piece of cake. I'm just bored.
-# 0 / all
+# 100 / 100
 
 if __name__ == '__main__':
     data = input()
@@ -25,6 +25,6 @@ if __name__ == '__main__':
                     print("No")
                     is_valid = False
                     break
-                    
+
             if is_valid:
                 print("Yes")
