@@ -1,3 +1,0 @@
-C:/Things/Programming/Quera/Cpp/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Things/Programming/Quera/Cpp/untitled/cmake-build-debug/CMakeFiles/untitled.dir
-C:/Things/Programming/Quera/Cpp/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir
